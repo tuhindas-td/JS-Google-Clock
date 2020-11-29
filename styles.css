@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+:root{
+    --google-blue:  #4285F4;
+    --google-green: #0F9D58;
+    --google-red:  #DB4437;
+    --google-yellow: #F4B400;
+}
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+#container {
+    position: relative;
+    width: 44%;
+    margin: auto;
+}
+#hour, #minute, #second {
+    position: absolute;
+    border-radius: 10px;
+}
+#hour, #minute {
+    transform-origin: bottom;
+}
+#brand, #display, #maker {
+    position: absolute;
+}
+#minute, #second {
+    width: 1%;
+    height: 40%;
+}
+#display, #maker {
+    text-align: center;
+}
+#hour {
+    top: 25%;
+    left: 49%;
+    width: 2%;
+    height: 24%;
+    background-color:var(--google-red);
+}
+#minute {
+    top: 9%;
+    left: 49.5%;
+    background-color:var(--google-blue);
+}
+#second {
+    top: 16%;
+    left: 49.5%;
+    transform-origin: 50% 84.5%;
+    background-color: var(--google-green);
+}
+#brand {
+    background: url("https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg") no-repeat;
+    background-size: 100%;
+    margin: auto;
+    width: 49%;
+    height: 18%;
+    top: 41%;
+    left: 25%;
+}
+#display {
+    border: 5px solid var(--google-yellow);
+    border-radius: 20px;
+    font-size: 3.5vw;
+    color: var(--google-blue);
+    width: 55%;
+    top: 66%;
+    left: 22%;
+}
+#maker {
+    width: 40%;
+    top: 10%;
+    left: 30%;
+    font-size: 3vw;
+}
